@@ -1,6 +1,11 @@
 {
   "scripts": {
-    "start": "parcel src/index.html"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "build_staging": "NODE_ENV=staging parcel build src/index.html"
+  },
+  "alias": {
+      "@env": "./environments"
   },
   "dependencies": {
     "react": "^16.3.1",
